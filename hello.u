@@ -1,0 +1,11 @@
+##########################
+
+main : '{IO, Exception} ()
+main = do
+  printLine ("Hello, world!")  
+
+##########################
+
+  printLine ("Hello, world!")  
+
+##########################
