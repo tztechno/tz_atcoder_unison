@@ -5,58 +5,13 @@
 #####################################################
 #####################################################
 #####################################################
-get_int : '{IO, Exception} Int
-get_int = do
-  line = !readLine
-  Optional.getOrBug "Invalid Input" (Int.fromText line)
-
-get_ints : '{IO, Exception} List(Int)
-get_ints = do
-  line = !readLine
-  w = words line
-  v = List.map Int.fromText w
-  List.map (Optional.getOrBug "Invalid Input") v
-
-main : '{IO, Exception} ()
-main = do
-  tmp = get_ints()
-  a = List.unsafeAt 0 tmp
-  b = List.unsafeAt 1 tmp
-  printLine (Int.toText b Text.++ " " Text.++ Int.toText a)
 #####################################################
-get_int : '{IO, Exception} Int
-get_int = do
-  line = !readLine
-  Optional.getOrBug "Invalid Input" (Int.fromText line)
-
-get_ints : '{IO, Exception} List(Int)
-get_ints = do
-  line = !readLine
-  w = words line
-  v = List.map Int.fromText w
-  List.map (Optional.getOrBug "Invalid Input") v
-
-main : '{IO, Exception} ()
-main = do
-  N = get_int()
-  printLine (Int.toText (N Int.- +1))
 #####################################################
-get_int : '{IO, Exception} Int
-get_int = do
-  line = !readLine
-  Optional.getOrBug "Invalid Input" (Int.fromText line)
-
-get_ints : '{IO, Exception} List(Int)
-get_ints = do
-  line = !readLine
-  w = words line
-  v = List.map Int.fromText w
-  List.map (Optional.getOrBug "Invalid Input") v
-
-main : '{IO, Exception} ()
-main = do
-  tmp = get_ints()
-  a = List.unsafeAt 0 tmp
-  b = List.unsafeAt 1 tmp
-  printLine (Int.toText b Text.++ " " Text.++ Int.toText a)
+#####################################################
+#####################################################
+#####################################################
+#####################################################
+[0, 1, 2, 3] List.++ [4, 5]
+⧨
+[0, 1, 2, 3, 4, 5]
 #####################################################
