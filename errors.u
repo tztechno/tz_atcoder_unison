@@ -10,6 +10,16 @@ ANY CALCULATION CANNOT BE AVAILABLE!!!
 ################################################
 ################################################
 ################################################
+get_int : '{IO, Exception} Int
+get_int = do
+  line = !readLine
+  Optional.getOrBug "Invalid Input" (Int.fromText line)
+
+main : '{IO, Exception} ()
+main = do
+  n = get_int()
+  printLine (n)
+
 ################################################
 get_int : '{IO, Exception} Int
 get_int = do
