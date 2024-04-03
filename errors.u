@@ -1,0 +1,58 @@
+################################################
+ANY CALCULATION CANNOT BE AVAILABLE!!!
+################################################
+################################################
+################################################
+################################################
+################################################
+################################################
+################################################
+################################################
+################################################
+################################################
+################################################
+get_int : '{IO, Exception} Int
+get_int = do
+  line = !readLine
+  Optional.getOrBug "Invalid Input" (Int.fromText line)
+
+main : '{IO, Exception} ()
+main = do
+  n = get_int()
+  m = n/3
+  printLine (Int.toText (m))
+
+################################################
+get_int : '{IO, Exception} Int
+get_int = do
+  line = !readLine
+  Optional.getOrBug "Invalid Input" (Int.fromText line)
+
+main : '{IO, Exception} ()
+main = do
+  n = get_int()
+  printLine (Int.toText (n*2))
+  
+################################################
+get_int : '{IO, Exception} Int
+get_int = do
+  line = !readLine
+  Optional.getOrBug "Invalid Input" (Int.fromText line)
+
+main : '{IO, Exception} ()
+main = do
+  n = get_int()
+  printLine (Int.toText (n/3))
+  
+################################################
+get_int : '{IO, Exception} Int
+get_int = do
+  line = !readLine
+  Optional.getOrBug "Invalid Input" (Int.fromText line)
+
+main : '{IO, Exception} ()
+main = do
+  n = get_int()
+  printLine (Int.toText (n div 3))
+  
+################################################
