@@ -8,6 +8,19 @@ ANY CALCULATION CANNOT BE POSSIBLE!!!
 ################################################
 ################################################
 ################################################
+get_int : '{IO, Exception} Int
+get_int = do
+  line = !readLine
+  Optional.getOrBug "Invalid Input" (Int.fromText line)
+
+main : '{IO, Exception} ()
+main = do
+  n = get_int()
+  if n>=1000 then
+  printLine ("ABD")
+  else
+  printLine ("ABC")  
+
 ################################################
 get_int : '{IO, Exception} Int
 get_int = do
