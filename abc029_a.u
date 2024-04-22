@@ -1,0 +1,7 @@
+###################################
+main : '{IO, Exception} ()
+main = do
+  S = !readLine
+  ans = S++"s"
+  printLine (ans)
+###################################
