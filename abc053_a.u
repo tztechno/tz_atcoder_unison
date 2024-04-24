@@ -1,0 +1,21 @@
+
+
+get_int : '{IO, Exception} Int
+get_int = do
+  line = !readLine
+  Optional.getOrBug "Invalid Input" (Int.fromText line)
+
+get_ints : '{IO, Exception} List(Int)
+get_ints = do
+  line = !readLine
+  w = words line
+  v = List.map Int.fromText w
+  List.map (Optional.getOrBug "Invalid Input") v
+
+main : '{IO, Exception} ()
+main = do
+  tmp = get_ints()
+  r = List.unsafeAt 0 tmp
+
+  ans = if r<1200 then "ABC" else "ARC"
+  printLine (ans)
