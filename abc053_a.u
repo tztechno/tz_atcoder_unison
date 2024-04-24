@@ -1,5 +1,6 @@
-
-
+[error]
+[unison r<1200 がわからないらしい]
+----------------------------------------------------------
 get_int : '{IO, Exception} Int
 get_int = do
   line = !readLine
@@ -19,3 +20,4 @@ main = do
 
   ans = if r<1200 then "ABC" else "ARC"
   printLine (ans)
+------------------------------------------------------------
