@@ -1,0 +1,29 @@
+
+
+main : '{IO, Exception} ()
+main = do
+  S = !readLine
+  if S=="0000" then
+  printLine ("SAME")
+  else if S=="1111" then
+  printLine ("SAME")
+  else if S=="1111" then
+  printLine ("SAME")  
+  else if S=="2222" then
+  printLine ("SAME")
+  else if S=="3333" then
+  printLine ("SAME")    
+  else if S=="4444" then
+  printLine ("SAME")
+  else if S=="5555" then
+  printLine ("SAME")  
+  else if S=="6666" then
+  printLine ("SAME")
+  else if S=="7777" then
+  printLine ("SAME")
+  else if S=="8888" then
+  printLine ("SAME")
+  else if S=="9999" then
+  printLine ("SAME")   
+  else
+  printLine ("DIFFERENT")  
