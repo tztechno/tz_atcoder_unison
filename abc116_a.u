@@ -1,0 +1,39 @@
+abc116_a.u [error]
+###########################################
+[success]
+result = a*b
+result = (a*b)
+result = a
+###########################################
+[error]
+result = a*b/2
+result = a*b div 2
+result = div a*b 2
+result = a*b quot 2
+result = (a*b)%2
+result = (a*b)*2
+result = 1
+result = 1:int
+result = (Int)1
+result = Int(1)
+result = Int.(1)
+result = List.unsafeAt 0 1
+result = List.unsafeAt 0 [1]
+result = List.unsafeAt 0 {1}
+result = Int.fromText 1
+result = Int.fromText "1"
+result = a+1
+result = Int(a)
+result = Int.(a)
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+###########################################
+[python]
+a,b,c=map(int,input().split())
+print(a*b//2)
+###########################################
