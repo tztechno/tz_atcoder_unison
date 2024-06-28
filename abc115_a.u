@@ -1,0 +1,26 @@
+abc115_a.u
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+##########################################
+main : '{IO, Exception} ()
+main = do
+  S = !readLine
+  if S=="22" then
+  printLine ("Christmas Eve Eve Eve")
+  else if S=="23" then
+  printLine ("Christmas Eve Eve")
+  else if S=="24" then
+  printLine ("Christmas Eve")
+  else
+  printLine ("Christmas")  
+##########################################
+[python]
+D=int(input())
+L=["Christmas Eve Eve Eve","Christmas Eve Eve","Christmas Eve","Christmas"]
+print(L[D-22])
+##########################################
